@@ -3,9 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini-Project Rafiq</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js/script.js"></script>
 </head>
+
 <body>
-    
+    <header class="main-header">
+        <div>
+            <img src="images/Logo.png" width="90px" class="logo" alt="">
+        </div>
+
+        <nav class="nav">
+            <a class="navbar" href="#">Home</a>
+            <a class="navbar" href="#our-package">Our Package</a>
+            <a class="navbar" href="#call-us">Call Us</a>
+        </nav>
+    </header> 
+    <hr/>   
+
+    <main>
+        <header class="main-article-header">
+            <h1 class="title">CITY TRANSIT</h1>
+            <h3 class="vision">Your journey, our pride.</h3>
+        </header>
+
+
+        <!-- Konten Utama -->
+        <article class="main-article">
+            <!-- Konten Banner Auto Slide -->
+            <section class="container-banner">
+                <div class="banner-autoslide">
+                    <div class="slide">
+                        <img src="images/slide1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="banner-vision">
+                    <p>"Liburan jadi menyenangkan bersama City Transit".</p>
+                </div>
+                
+                    <!-- Testimoni -->
+                    <div class="testimoni">
+                        <div class="profile">
+                            <img src="images/profile.png" alt="Profile Picture" class="profile-picture">
+                            <div class="profile-info">
+                                <h3>Marriot Bonvoy</h3>
+                                <p>Mahasiswi, 92</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination-line">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    
+                    <!-- Information -->
+                    <div class="additional-info">
+                        <p class="isi">Temukan Kota dengan City Transit.
+                            Perjalanan Anda layak mendapatkan kenyamanan, keandalan, dan pengalaman tak terlupakan.
+                            Di City Transit, kami memastikan setiap mil membawa Anda lebih dekat ke kebahagiaan.</p>
+                        <ul class="features">
+                            <li>
+                                <span class="circle">1</span>
+                                <p class="isi">
+                                    Jelajahi Kota dengan City Transit
+                                    Perjalanan Anda dimaksudkan untuk menjadi nyaman, dapat diandalkan, dan penuh dengan momen tak terlupakan.
+                                    Di City Transit, kami menjamin bahwa setiap mil membawa Anda lebih dekat pada kegembiraan.</p>
+                            </li>
+                            <li>
+                                <span class="circle">2</span>
+                                <p class="isi">
+                                    Kenyamanan dan Keamanan di Setiap Langkah
+                                    Nikmati perjalanan yang mulus dan aman dengan kendaraan canggih dan pengemudi yang berdedikasi.</p>
+                            </li>
+                            <li>
+                                <span class="circle">3</span>
+                                <p class="isi">
+                                    Perjalanan Terjangkau dengan Layanan Premium
+                                    Nikmati layanan tingkat atas dengan harga yang sesuai anggaran Anda. Kepuasan Anda adalah tujuan kami!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            
+            <!-- Form Contact Us -->
+            <section class="contact-section">
+                <div class="main-contact-us">
+                    <div class="main-contact-us-form">
+                        <h2>Contact Us</h2>
+                        <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+                        <form>
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" placeholder="First and last name" required>
+
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                            <label for="interest">What are you interested in?</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Select option</option>
+                                <option value="travel">Travel Packages</option>
+                                <option value="flight">Flight Booking</option>
+                                <option value="hotel">Hotel Reservation</option>
+                            </select>
+                            <button type="button" onclick="validateForm()" style="font-family: poppins semibold;">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Konten Our Package -->
+        <article id="our-package">
+            <header class="our-package-header">
+                <h1>Our Package</h1>
+            </header>
+
+            <section class="packages">
+                <div class="package">
+                    <span class="icon">💡</span>
+                    <h3>Bali</h3>
+                    <p>Nikmati perjalanan wisata di Bali dengan mengunjungi berbagai cagar budaya yang memukau 
+                       serta menikmati ragam kuliner khas yang menggugah selera.</p>
+                </div>
+                <div class="package">
+                    <span class="icon">💡</span>
+                    <h3>Jepang</h3>
+                    <p>Jelajahi keindahan Jepang melalui perjalanan wisata yang kaya akan cagar budaya dan kuliner unik yang tak terlupakan.</p>
+                </div>
+                <div class="package">
+                    <span class="icon">💡</span>
+                    <h3>Singapore</h3>
+                    <p>Temukan pengalaman wisata yang tak kalah menarik di Singapura dengan perpaduan budaya modern dan kuliner khas yang memanjakan.</p>
+                </div>
+                <div class="package">
+                    <span class="icon">⭐</span>
+                    <h3>Bandung</h3>
+                    <p>Eksplorasi kota Bandung yang dikenal dengan pesona wisata alam, budaya, dan kulinernya yang beragam.</p>
+                </div>
+                <div class="package">
+                    <span class="icon">⭐</span>
+                    <h3>Surabaya</h3>
+                    <p>Rasakan kekayaan budaya dan cita rasa kuliner khas Surabaya dalam perjalanan wisata yang penuh warna.</p>
+                </div>
+                <div class="package">
+                    <span class="icon">⭐</span>
+                    <h3>Padang</h3>
+                    <p>Jelajahi Padang yang terkenal dengan tradisi budaya yang kental dan sajian kuliner legendaris seperti rendang.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <hr/>
+
+    <main>
+        <!-- Closing Argument -->
+        <section class="closing-argument">
+            <h2>Solusi Perjalanan Anda, Mudah dan Nyaman</h2>
+            <p>Nikmati pengalaman perjalanan terbaik dengan layanan profesional. Kami siap mengantar Anda ke tujuan dengan aman dan nyaman.</p>
+            <button id="call-us" class="call-to-action">CALL TO ACTION</button>
+        </section>
+    </main>
+    <hr/>
+
+    <!-- Bagian Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Terms of Service | Privacy Policy</p>
+            <p>© 2024 Rafiq Septiawan</p>
+        </div>
+    </footer>
 </body>
 </html>

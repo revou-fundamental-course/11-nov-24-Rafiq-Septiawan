@@ -1,1 +1,511 @@
-/* ini CSS */
+/* Bagian Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    font-family: poppins semibold;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Artikel */
+.main-article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Judul Tema Website */
+.title {
+    font-family: ITC Avant Garde Gothic LT;
+    font-size: 45px;
+}
+
+.vision {
+    font-family: Monotype Corsiva;
+    font-size: 20px;
+}
+
+main {
+    margin: 50px;
+}
+
+.main-article-header {
+    text-align: center;
+}
+
+/* Bagian Banner-Autoslide */
+.container-banner {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 40px 20px 20px 0px;
+    overflow: hidden;
+}
+
+.banner-autoslide {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-vision {
+    font-family: news701 bt;
+    font-size: 1.0em;
+    color: #333;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Bagian Profile Testimoni */
+.profile {
+    display: flex;
+    justify-content: left;
+    margin: 10px 30px 100px 30px;
+}
+
+.profile-picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.profile-info h3 {
+    font-family: poppins semibold;
+    font-size: 1rem;
+    color: #000000;
+    margin: 0px 0px 0px 15px;
+}
+
+.profile-info p {
+    font-family: poppins semibold;
+    font-size: 0.8rem;
+    color: #808080;
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+/* Pagination*/
+.pagination-line {
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 50px; 
+    height: 5px;
+    border-radius: 5px;
+    background-color: #bbb; 
+    transition: background-color 0.3s ease, width 0.3s ease; 
+}
+
+.dot.active {
+    background-color: #00b132;
+    width: 30px;
+}
+
+/* Bagian Contact Us */
+.main-contact-us {
+    font-family: Calibri, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;;
+    background: #dddddd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-contact-us-form h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-align: left;
+    color: #333;
+    position: relative;
+    top: -5px;
+}
+
+.main-contact-us-form p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: left;
+    position: relative;
+    top: -5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form select {
+    width: calc(100% - 0px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Bagian Informasi */
+.additional-info p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0px 40px 30px 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 0px 40px 20px 30px;
+}
+
+.features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.isi {
+    font-family: poppins;
+    text-align: justify;
+    margin: 0px 0px 100px 0px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #00b132;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.features p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Bagian Our Package */
+.our-package-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: #dddddd;
+    font-family: poppins;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: poppins;
+}
+
+.package {
+    background: #f9fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.package .icon {
+    display: block;
+    font-size: 36px;
+    color: #4b5563;
+    margin: 0 auto 10px auto;
+}
+
+.package h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.package p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Bagian Closing Argumen */
+.closing-argument {
+    text-align: center;
+    padding: 20px;
+}
+
+.closing-argument h2 {
+    font-family: poppins semibold;
+    font-size: 2.2rem;
+}
+
+.closing-argument p {
+    font-family: poppins;
+    font-size: 1rem;
+    margin: 50px 0;
+}
+
+.call-to-action {
+    font-family: poppins semibold;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.call-to-action:hover {
+    background-color: #555;
+}
+
+/* Bagian Footer */
+.footer {
+    text-align: center;
+}
+
+.footer-content {
+    font-family: poppins;
+    color: #797979;
+}
+
+/* Responsive */
+/*Desktop 1*/
+@media only screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .main-article {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .packages {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/*Desktop 2*/
+@media only screen and (min-width: 1366px) {
+    .banner {
+        width: 700px;
+        height: 400px;
+        margin: 40px 100px 0px 200px;
+    }
+
+    .main-contact-us {
+        max-width: 300px;;
+        padding: 40px;
+        padding-bottom: 100px;
+    }
+
+    .main-contact-us-form h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.8em;
+        text-align: left;
+    }
+    
+    .main-contact-us-form p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .profile-info h3 {
+        font-size: 1rem;
+    }
+
+    .profile-picture {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .additional-info {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+/*Handphone*/
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .vision {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        margin: 0px 0;
+    }
+
+    .banner-vision {
+        font-size: 12px;
+    }
+
+    .profile-picture {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    
+    .profile-info h3 {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+    
+    .profile-info p {
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+
+    .main-contact-us-form h2 {
+        font-size: 1.5rem;
+        top: -5px;
+    }
+    
+    .main-contact-us-form p {
+        margin-top: 0;
+        font-size: 0.7rem;
+        text-align: left;
+        top: -5px;
+    }
+
+    .packages {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 0 10px;
+    }
+
+    .package {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .main-contact-us {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .call-to-action {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 10px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .navbar:hover {
+        color: #00b132;
+        transition: color 0.3s;
+    }
+
+    .call-to-action:hover {
+        background-color: #00b132;
+        transition: background-color 0.3s;
+    }
+}
