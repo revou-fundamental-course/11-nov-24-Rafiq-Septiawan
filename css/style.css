@@ -1,7 +1,19 @@
 /* Bagian Header */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%; 
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    left: 10px;
 }
 
 .nav {
@@ -49,6 +61,7 @@ main {
     max-width: 700px;
     margin: 40px 20px 20px 0px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .banner-autoslide {
@@ -100,15 +113,15 @@ main {
     font-family: poppins semibold;
     font-size: 1rem;
     color: #000000;
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 10px;
 }
 
 .profile-info p {
-    font-family: poppins semibold;
+    font-family: Century751 SeBd BT;
     font-size: 0.8rem;
-    color: #808080;
+    color: #646464;
     margin-top: 0;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 /* Pagination*/
@@ -139,9 +152,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;;
+    max-width: 300px;;
     background: #dddddd;
-    padding: 10px;
+    padding: 30px;
+    padding-bottom: 95px;
     border-radius: 10px;
     text-align: left;
 }
@@ -155,7 +169,7 @@ main {
 }
 
 .main-contact-us-form h2 {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 1.8em;
     text-align: left;
@@ -166,7 +180,7 @@ main {
 
 .main-contact-us-form p {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     color: #555;
     text-align: left;
     position: relative;
@@ -196,12 +210,14 @@ form button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    margin-top: 50px;
     padding: 10px;
-    font-family: "Poppins", sans-serif;
 }
 
 /* Bagian Informasi */
 .additional-info p {
+    overflow: hidden;
+    box-sizing: border-box;
     color: #555;
     font-size: 0.95em;
     line-height: 1.5;
@@ -262,6 +278,9 @@ form button {
 }
 
 .packages {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -414,9 +433,13 @@ form button {
 
 /*Handphone*/
 @media only screen and (max-width: 480px) {
-    .main-header {
+    .main-header, .packages, .features {
         flex-direction: column;
-        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .main-contact-us {
+        width: 100%;
     }
 
     .nav {
@@ -431,6 +454,12 @@ form button {
     .vision {
         font-size: 14px;
         margin: 10px 0;
+    }
+
+    .slide {
+        width: 100%;
+        height: auto;
+        margin-left: 15px;
     }
 
     .banner {
@@ -459,6 +488,25 @@ form button {
         margin-left: 10px;
     }
 
+    .main-contact-us {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .additional-info {
+        position: relative;
+        left: 10px;
+    }
+
+    .features {
+        font-size: medium;
+    }
+
+    .isi {
+        font-size: 10px;
+        text-align: justify;
+    }
+
     .main-contact-us-form h2 {
         font-size: 1.5rem;
         top: -5px;
@@ -473,7 +521,7 @@ form button {
 
     .packages {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 30px;
         margin: 0 10px;
     }
 
